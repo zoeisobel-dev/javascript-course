@@ -325,3 +325,5 @@ console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bil
 // Bill 275: "The bill was 275, the tip was 41.25, and the total value 316.25"
 // Bill 40: "The bill was 40, the tip was 8, and the total value 48"
 // Bill 430: "The bill was 430, the tip was 86, and the total value 516"
+
+/////////////////////////////////END
