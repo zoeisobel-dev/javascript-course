@@ -251,294 +251,466 @@
 
 /////////////////////END 02
 
-// Array Problem
-console.log("=== ARRAY PROBLEM ===");
-const jonasArray = [
-  "Joey",
-  "Santos",
-  2037 - 1991,
-  "teacher",
-  ["Michael", "Peter", "Steven"]  
-]
-console.log(jonasArray[0]);
-console.log(jonasArray[1]);
-console.log(jonasArray[2]);
-console.log(jonasArray[3]);
+// // Array Problem
+// console.log("=== ARRAY PROBLEM ===");
+// const jonasArray = [
+//   "Joey",
+//   "Santos",
+//   2037 - 1991,
+//   "teacher",
+//   ["Michael", "Peter", "Steven"]  
+// ]
+// console.log(jonasArray[0]);
+// console.log(jonasArray[1]);
+// console.log(jonasArray[2]);
+// console.log(jonasArray[3]);
 
-console.log("=== OBJECTS ===");
+// console.log("=== OBJECTS ===");
 
-const jonas = {
-  firstName: "Joe",
-  lastName: "Santos",
-  age: 2037 - 1991,
-  job: "teacher",
-  friends: ["Michael", "Peter", "Steven"],
-};
-console.log(jonas);
+// const jonas = {
+//   firstName: "Joe",
+//   lastName: "Santos",
+//   age: 2037 - 1991,
+//   job: "teacher",
+//   friends: ["Michael", "Peter", "Steven"],
+// };
+// console.log(jonas);
 
-console.log(jonasArray[2]);
+// console.log(jonasArray[2]);
 
-console.log(jonas.firstName);
-console.log(jonas.lastName);
-console.log(jonas.age);
-console.log(jonas.job);
-console.log(jonas.friends);
+// console.log(jonas.firstName);
+// console.log(jonas.lastName);
+// console.log(jonas.age);
+// console.log(jonas.job);
+// console.log(jonas.friends);
 
-console.log(jonas["firstName"]);
-console.log(jonas["lastName"]);
-console.log(jonas["age"]);
-console.log(jonas["job"]);
-console.log(jonas["friends"]);
+// console.log(jonas["firstName"]);
+// console.log(jonas["lastName"]);
+// console.log(jonas["age"]);
+// console.log(jonas["job"]);
+// console.log(jonas["friends"]);
 
-const nameKey = "Name";
-console.log(jonas["first" + nameKey]);
-console.log(jonas["last" + nameKey]);
+// const nameKey = "Name";
+// console.log(jonas["first" + nameKey]);
+// console.log(jonas["last" + nameKey]);
 
-jonas.job = "programmer";
-jonas["age"] = 35;
-console.log(jonas);
+// jonas.job = "programmer";
+// jonas["age"] = 35;
+// console.log(jonas);
 
-jonas.friends = ["Paul", "Tom", "Jeyp"];
-console.log(jonas);
+// jonas.friends = ["Paul", "Tom", "Jeyp"];
+// console.log(jonas);
 
-jonas.location = "Philippines";
-jonas["instagram"] = "itsmejonas";
-jonas.hasDriverLicense = true;
-console.log(jonas);
+// jonas.location = "Philippines";
+// jonas["instagram"] = "itsmejonas";
+// jonas.hasDriverLicense = true;
+// console.log(jonas);
 
 
-console.log("=== EXERCISE 1 ===");
-const book = {
-  title: "The Alchemist",
-  author: "Paulo Coelho",
-  year: 1988,
-  genres: ["Fiction", "Adventure", "Fantasy"],
-  available: true
-};
+// console.log("=== EXERCISE 1 ===");
+// const book = {
+//   title: "The Alchemist",
+//   author: "Paulo Coelho",
+//   year: 1988,
+//   genres: ["Fiction", "Adventure", "Fantasy"],
+//   available: true
+// };
 
-const playlist = {
-album: "Geng geng",
-artist: "Katseye",
-favorites: ["Gameboy", "Gnarly", "Touch"],
-}
+// const playlist = {
+// album: "Geng geng",
+// artist: "Katseye",
+// favorites: ["Gameboy", "Gnarly", "Touch"],
+// }
 
-console.log(book.author);
-console.log(playlist.artist);
+// console.log(book.author);
+// console.log(playlist.artist);
 
-// Add new properties
-playlist.genre = "Pop";
-console.log(playlist);
+// // Add new properties
+// playlist.genre = "Pop";
+// console.log(playlist);
 
-// Modify existing properties
-playlist.favorites = ["Gameboy", "Gnarly", "Touch"];
-console.log(playlist);
+// // Modify existing properties
+// playlist.favorites = ["Gameboy", "Gnarly", "Touch"];
+// console.log(playlist);
 
-const person = {
-  name: "Zoe",
-  age: 20,
-  occupation: "Student",
-};
+// const person = {
+//   name: "Zoe",
+//   age: 20,
+//   occupation: "Student",
+// };
 
-const phone = {
-  brand: "Apple",
-  model: "iPhone 15 Pro Max fully paid 256GB",
-  year: 2024,
-  color: "Pink",
-};
+// const phone = {
+//   brand: "Apple",
+//   model: "iPhone 15 Pro Max fully paid 256GB",
+//   year: 2024,
+//   color: "Pink",
+// };
 
-console.log(person);
-console.log(phone);
+// console.log(person);
+// console.log(phone);
 
-const student = {
-  name: "Zoe",
-  gwa: [3.5, 3.5, 4.0],
-  specialization: "Multimedia Arts and Animation",
-  address: {
-    street: "Bagatua",
-    city: "Quezon City",
-  },
-};
+// const student = {
+//   name: "Zoe",
+//   gwa: [3.5, 3.5, 4.0],
+//   specialization: "Multimedia Arts and Animation",
+//   address: {
+//     street: "Bagatua",
+//     city: "Quezon City",
+//   },
+// };
 
-console.log(student.gwa[1]);
-console.log(student.address.city);
+// console.log(student.gwa[1]);
+// console.log(student.address.city);
 
-console.log("=== OBJECT METHODS ===");
-const sibling = {
-  firstName: "Ava",
-  lastName: "Laput",
-  birthYear: 2006,
-  job: "Student",
-  friends: ["Kent", "Marian", "Simon"],
-  isAsibling: true,
+// console.log("=== OBJECT METHODS ===");
+// const sibling = {
+//   firstName: "Ava",
+//   lastName: "Laput",
+//   birthYear: 2006,
+//   job: "Student",
+//   friends: ["Kent", "Marian", "Simon"],
+//   isAsibling: true,
   
-  //  Method using function declaration
-  calcAge: function (birthYear) {
-    return 2037 - birthYear;
-  },
-};
+//   //  Method using function declaration
+//   calcAge: function (birthYear) {
+//     return 2037 - birthYear;
+//   },
+// };
 
-console.log(sibling.calcAge(2022));
-console.log(sibling.calcAge(sibling.birthYear));
-const siblingImproved = {
-  firstName: "Ava",
-  lastName: "Laput",
-  birthYear: 2006,
-  job: "Student",
-  friends: ["Kent", "Marian", "Simon"],
-  isAsibling: true,
+// console.log(sibling.calcAge(2022));
+// console.log(sibling.calcAge(sibling.birthYear));
+// const siblingImproved = {
+//   firstName: "Ava",
+//   lastName: "Laput",
+//   birthYear: 2006,
+//   job: "Student",
+//   friends: ["Kent", "Marian", "Simon"],
+//   isAsibling: true,
 
-  // Method using function declaration
-  calcAge: function () {
-    console.log(this);
-    return 2037 - this.birthYear;
-  },
-};
+//   // Method using function declaration
+//   calcAge: function () {
+//     console.log(this);
+//     return 2037 - this.birthYear;
+//   },
+// };
 
-console.log(siblingImproved.calcAge());
+// console.log(siblingImproved.calcAge());
 
-const siblingAdvanced = {
-  firstName: "Ava",
-  lastName: "Laput",
-  birthYear: 2006,
-  job: "Student",
-  friends: ["Kent", "Marian", "Simon"],
-  isAsibling: true,
+// const siblingAdvanced = {
+//   firstName: "Ava",
+//   lastName: "Laput",
+//   birthYear: 2006,
+//   job: "Student",
+//   friends: ["Kent", "Marian", "Simon"],
+//   isAsibling: true,
 
-  // Method using function declaration
-  calcAge: function () {
-    this.age = 2037 - this.birthYear;
-    return this.age;
-  },
+//   // Method using function declaration
+//   calcAge: function () {
+//     this.age = 2037 - this.birthYear;
+//     return this.age;
+//   },
 
-  getSummary: function () {
-      return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.isAsibling ? "an" : "no"} id.`;
-    },
-};
+//   getSummary: function () {
+//       return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.isAsibling ? "an" : "no"} id.`;
+//     },
+// };
 
-console.log(siblingAdvanced.calcAge());
-console.log(siblingAdvanced.age);
-console.log(siblingAdvanced.getSummary());
+// console.log(siblingAdvanced.calcAge());
+// console.log(siblingAdvanced.age);
+// console.log(siblingAdvanced.getSummary());
 
-console.log("=== EXERCISE 2 ===");
+// console.log("=== EXERCISE 2 ===");
 
-const calculator = {
-  num1: 10,
-  num2: 5,
-  operator: "+",
+// const calculator = {
+//   num1: 10,
+//   num2: 5,
+//   operator: "+",
 
-  add: function () {
-    this.result = this.num1 + this.num2;
-  },
-  subtract: function () {
-    this.result = this.num1 - this.num2;
-  },
-  multiply: function () {
-    this.result = this.num1 * this.num2;
-  },
-  divide: function () {
-    this.result = this.num1 / this.num2;
-  },
+//   add: function () {
+//     this.result = this.num1 + this.num2;
+//   },
+//   subtract: function () {
+//     this.result = this.num1 - this.num2;
+//   },
+//   multiply: function () {
+//     this.result = this.num1 * this.num2;
+//   },
+//   divide: function () {
+//     this.result = this.num1 / this.num2;
+//   },
 
-  calculate: function () {
-    if (this.operator === "+") {
-      this.add();
-    } else if (this.operator === "-") {
-      this.subtract();
-    } else if (this.operator === "*") {
-      this.multiply();
-    } else if (this.operator === "/") {
-      this.divide();
-    }
-      return this.result;
-  },
+//   calculate: function () {
+//     if (this.operator === "+") {
+//       this.add();
+//     } else if (this.operator === "-") {
+//       this.subtract();
+//     } else if (this.operator === "*") {
+//       this.multiply();
+//     } else if (this.operator === "/") {
+//       this.divide();
+//     }
+//       return this.result;
+//   },
 
-  getResult: function () {
-    return `${this.num1} ${this.operator} ${this.num2} = ${this.result}`;
-  },
-};
+//   getResult: function () {
+//     return `${this.num1} ${this.operator} ${this.num2} = ${this.result}`;
+//   },
+// };
 
-console.log(calculator.calculate());
-console.log(calculator.getResult());
+// console.log(calculator.calculate());
+// console.log(calculator.getResult());
 
-console.log("=== CHALLENGE ===");
-const user = {
-  firstName: "Sarah",
-  lastName: "Johnson",
-  birthYear: 1995,
-  location: "New York",
-  interests: ["photography", "travel", "coding"],
-  friends: [
-  { name: "Michael", status: "active" },
-  { name: "Emma", status: "inactive" },
-  { name: "David", status: "active" },
-  ],
-  isActive: true,
+// console.log("=== CHALLENGE ===");
+// const user = {
+//   firstName: "Sarah",
+//   lastName: "Johnson",
+//   birthYear: 1995,
+//   location: "New York",
+//   interests: ["photography", "travel", "coding"],
+//   friends: [
+//   { name: "Michael", status: "active" },
+//   { name: "Emma", status: "inactive" },
+//   { name: "David", status: "active" },
+//   ],
+//   isActive: true,
 
-  // Calculate age method
-  calcAge: function () {
-    this.age = new Date().getFullYear() - this.birthYear;
-    return this.age;
-  },
+//   // Calculate age method
+//   calcAge: function () {
+//     this.age = new Date().getFullYear() - this.birthYear;
+//     return this.age;
+//   },
 
-  // Add friend method
-  addFriend: function (name, status = "active") {
-    this.friends.push({ name, status });
-    return this.friends.length;
-  },
+//   // Add friend method
+//   addFriend: function (name, status = "active") {
+//     this.friends.push({ name, status });
+//     return this.friends.length;
+//   },
 
-  // Get active friends count
-  getActiveFriends: function () {
-    return this.friends.filter(friend => friend.status === "active").length;
-  },
+//   // Get active friends count
+//   getActiveFriends: function () {
+//     return this.friends.filter(friend => friend.status === "active").length;
+//   },
 
-  // Toggle active status
-  toggleStatus: function () {
-    this.isActive = !this.isActive;
-    return this.isActive;
-  },
+//   // Toggle active status
+//   toggleStatus: function () {
+//     this.isActive = !this.isActive;
+//     return this.isActive;
+//   },
 
-  // Generate profile summary
-  getSummary: function () {
-    return `Name: ${this.firstName} ${this.lastName}
-    Age: ${this.calcAge()}
-    Location: ${this.location}
-    Status: ${this.isActive ? "Active" : "Inactive"}
-    Friends: ${this.getActiveFriends()} active, ${this.friends.length} total
-    Interests: ${this.interests.join(", ")}`;
-  },
-};
+//   // Generate profile summary
+//   getSummary: function () {
+//     return `Name: ${this.firstName} ${this.lastName}
+//     Age: ${this.calcAge()}
+//     Location: ${this.location}
+//     Status: ${this.isActive ? "Active" : "Inactive"}
+//     Friends: ${this.getActiveFriends()} active, ${this.friends.length} total
+//     Interests: ${this.interests.join(", ")}`;
+//   },
+// };
 
-// Test your user profile system
-console.log(user.getSummary());
-user.addFriend("Alex", "active");
-user.toggleStatus();
-console.log(`\nAfter updates:`);
-console.log(user.getSummary());
+// // Test your user profile system
+// console.log(user.getSummary());
+// user.addFriend("Alex", "active");
+// user.toggleStatus();
+// console.log(`\nAfter updates:`);
+// console.log(user.getSummary());
 
-console.log("=== PREVIEW 4 ===");
+// console.log("=== PREVIEW 4 ===");
 
-// Query Selector
+// // Query Selector
+// const message = document.querySelector(".message");
+// console.log(message);
+
+// const button = document.querySelector("#btn");
+// console.log(button);
+
+// const heading = document.querySelector("h1");
+// console.log(heading);
+
+// console.log(message.textContent);
+// console.log(button.id);
+// console.log(heading.tagName);
+// console.log(heading.textContent);
+
+// // getElementByID;
+// const buttonById = document.getElementById("btn");
+// console.log(buttonById);
+// console.log(buttonById === button);
+
+// const messageByClass = document.querySelector(".message");
+// console.log(messageByClass);
+// console.log(messageByClass === message);
+
+// updateWinningScoreDisplay();
+
+//////////////////////// END 03
+
+// querySelectorAll
+const allParagraphs = document.querySelectorAll("p");
+console.log(allParagraphs);
+console.log(allParagraphs[0]);
+
+console.log("=== CONTENT MANIPULATION ===");
+
 const message = document.querySelector(".message");
-console.log(message);
+console.log(message.textContent);
+message.textContent = "Hello, JavaScript!";
+console.log(message.textContent);
 
-const button = document.querySelector("#btn");
-console.log(button);
+// innerHTML (modifies the text into Bold)
+message.innerHTML = "<strong>Meow Meow Neko</strong>";
+// innerText (retrieves the text content without HTML)
+console.log(message.innerText);
+
+// Input Element Values
+const input = document.querySelector(".guess");
+console.log(input.value);
+input.value = "Default Value";
+console.log(input.value);
 
 const heading = document.querySelector("h1");
+heading.style.color = "yellow";
+heading.style.backgroundColor = "black";
+heading.style.fontSize = "2rem";
+
+const button = document.querySelector("#btn");
+button.style.padding = "10px";
+button.style.borderRadius = "10px";
+button.style.backgroundColor = "lightGray";
+
 console.log(heading);
+console.log(button);
 
-console.log(message.textContent);
-console.log(button.id);
-console.log(heading.tagName);
-console.log(heading.textContent);
+console.log("=== EVENT LISTENERS ===");
 
-// getElementByID;
-const buttonById = document.getElementById("btn");
-console.log(buttonById);
-console.log(buttonById === button);
+button.addEventListener("click", function () {
+  console.log("Button was clicked!");
+  message.textContent = "You clicked the button!";
+  message.style.color = "lightblue ";
+});
 
-const messageByClass = document.querySelector(".message");
-console.log(messageByClass);
-console.log(messageByClass === message);
+let clickCount = 0;
+button.addEventListener("click", function () {
+  clickCount++;
+  console.log(`Button was clicked ${clickCount} times`);
+  button.style.backgroundColor = `hsl(${clickCount * 30}, 70%, 50%)`;
+});
 
-updateWinningScoreDisplay();
+// Input Events
+const display = document.querySelector(".message");
+input.addEventListener("input", function () {
+  const userText = input.value;
+  display.textContent = `You typed: ${userText}`;
+  display.style.fontSize = `${userText.length + 5}px`;
+});
+
+// Keyboard Events
+input.addEventListener("keydown", function (event) {
+  console.log(`Key pressed: ${event.key}`);
+  if (event.key === "Enter") {
+    display.textContent = `You pressed Enter: Text was ${input.value}`;
+    input.value = "";
+  }
+});
+
+console.log("=== CHALLENGE ===");
+const score1 = document.getElementById('score-1');
+const score2 = document.getElementById('score-2');
+const btnAddPoints = document.querySelectorAll('.btn-add');
+const btnReset = document.getElementById('btn-reset');
+const winningScoreInput = document.getElementById('winning-score');
+const targetSpan = document.querySelector('.target');
+const status = document.querySelector('.status');
+const winnerMessage = document.querySelector('.winner');
+const winnerName = document.querySelector('.winner-name');
+const player1 = document.querySelector('.player-1');
+const player2 = document.querySelector('.player-2');
+
+let scorePlayer1 = 0;
+let scorePlayer2 = 0;
+let winningScore = parseInt(winningScoreInput.value);
+let gameOver = false;
+
+function updateWinningScoreDisplay() {
+  targetSpan.textContent = winningScore;
+  status.textContent = `First to ${winningScore} wins!`;
+}
+
+function resetGame() {
+  scorePlayer1 = 0;
+  scorePlayer2 = 0;
+  gameOver = false;
+  score1.textContent = scorePlayer1;
+  score2.textContent = scorePlayer2;
+  winnerMessage.classList.add('hidden');
+  winnerName.textContent = 'Player';
+  player1.classList.remove('winner', 'loser');
+  player2.classList.remove('winner', 'loser');
+  updateWinningScoreDisplay();
+}
+
+function addPoint(player) {
+  if (gameOver) return;
+
+  if (player === 1) {
+    scorePlayer1++;
+    score1.textContent = scorePlayer1;
+    if (scorePlayer1 >= winningScore) {
+      endGame(1);
+    }
+  } else if (player === 2) {
+    scorePlayer2++;
+    score2.textContent = scorePlayer2;
+    if (scorePlayer2 >= winningScore) {
+      endGame(2);
+    }
+  }
+}
+
+function endGame(winningPlayer) {
+  gameOver = true;
+  winnerMessage.classList.remove('hidden');
+  winnerName.textContent = `Player ${winningPlayer}`;
+
+  if (winningPlayer === 1) {
+    player1.classList.add('winner');
+    player2.classList.add('loser');
+  } else {
+    player2.classList.add('winner');
+    player1.classList.add('loser');
+  }
+}
+
+btnAddPoints.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const player = parseInt(btn.getAttribute('data-player'));
+    addPoint(player);
+  });
+});
+
+btnReset.addEventListener('click', resetGame);
+
+winningScoreInput.addEventListener('change', () => {
+  let val = parseInt(winningScoreInput.value);
+  if (isNaN(val) || val < 1) {
+    val = 1;
+  } else if (val > 20) {
+    val = 20;
+  }
+  winningScoreInput.value = val;
+  winningScore = val;
+  updateWinningScoreDisplay();
+  resetGame();
+});
+
+window.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT') return;
+
+  if (e.key === '1') {
+    addPoint(1);
+  } else if (e.key === '2') {
+    addPoint(2);
+  } else if (e.key.toLowerCase() === 'r') {
+    resetGame();
+  }
+});
