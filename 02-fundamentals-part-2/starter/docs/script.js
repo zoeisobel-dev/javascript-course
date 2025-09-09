@@ -545,73 +545,73 @@
 
 //////////////////////// END 03
 
-// querySelectorAll
-const allParagraphs = document.querySelectorAll("p");
-console.log(allParagraphs);
-console.log(allParagraphs[0]);
+// // querySelectorAll
+// const allParagraphs = document.querySelectorAll("p");
+// console.log(allParagraphs);
+// console.log(allParagraphs[0]);
 
-console.log("=== CONTENT MANIPULATION ===");
+// console.log("=== CONTENT MANIPULATION ===");
 
-const message = document.querySelector(".message");
-console.log(message.textContent);
-message.textContent = "Hello, JavaScript!";
-console.log(message.textContent);
+// const message = document.querySelector(".message");
+// console.log(message.textContent);
+// message.textContent = "Hello, JavaScript!";
+// console.log(message.textContent);
 
-// innerHTML (modifies the text into Bold)
-message.innerHTML = "<strong>Meow Meow Neko</strong>";
-// innerText (retrieves the text content without HTML)
-console.log(message.innerText);
+// // innerHTML (modifies the text into Bold)
+// message.innerHTML = "<strong>Meow Meow Neko</strong>";
+// // innerText (retrieves the text content without HTML)
+// console.log(message.innerText);
 
-// Input Element Values
-const input = document.querySelector(".guess");
-console.log(input.value);
-input.value = "Default Value";
-console.log(input.value);
+// // Input Element Values
+// const input = document.querySelector(".guess");
+// console.log(input.value);
+// input.value = "Default Value";
+// console.log(input.value);
 
-const heading = document.querySelector("h1");
-heading.style.color = "yellow";
-heading.style.backgroundColor = "black";
-heading.style.fontSize = "2rem";
+// const heading = document.querySelector("h1");
+// heading.style.color = "yellow";
+// heading.style.backgroundColor = "black";
+// heading.style.fontSize = "2rem";
 
-const button = document.querySelector("#btn");
-button.style.padding = "10px";
-button.style.borderRadius = "10px";
-button.style.backgroundColor = "lightGray";
+// const button = document.querySelector("#btn");
+// button.style.padding = "10px";
+// button.style.borderRadius = "10px";
+// button.style.backgroundColor = "lightGray";
 
-console.log(heading);
-console.log(button);
+// console.log(heading);
+// console.log(button);
 
-console.log("=== EVENT LISTENERS ===");
+// console.log("=== EVENT LISTENERS ===");
 
-button.addEventListener("click", function () {
-  console.log("Button was clicked!");
-  message.textContent = "You clicked the button!";
-  message.style.color = "lightblue ";
-});
+// button.addEventListener("click", function () {
+//   console.log("Button was clicked!");
+//   message.textContent = "You clicked the button!";
+//   message.style.color = "lightblue ";
+// });
 
-let clickCount = 0;
-button.addEventListener("click", function () {
-  clickCount++;
-  console.log(`Button was clicked ${clickCount} times`);
-  button.style.backgroundColor = `hsl(${clickCount * 30}, 70%, 50%)`;
-});
+// let clickCount = 0;
+// button.addEventListener("click", function () {
+//   clickCount++;
+//   console.log(`Button was clicked ${clickCount} times`);
+//   button.style.backgroundColor = `hsl(${clickCount * 30}, 70%, 50%)`;
+// });
 
-// Input Events
-const display = document.querySelector(".message");
-input.addEventListener("input", function () {
-  const userText = input.value;
-  display.textContent = `You typed: ${userText}`;
-  display.style.fontSize = `${userText.length + 5}px`;
-});
+// // Input Events
+// const display = document.querySelector(".message");
+// input.addEventListener("input", function () {
+//   const userText = input.value;
+//   display.textContent = `You typed: ${userText}`;
+//   display.style.fontSize = `${userText.length + 5}px`;
+// });
 
-// Keyboard Events
-input.addEventListener("keydown", function (event) {
-  console.log(`Key pressed: ${event.key}`);
-  if (event.key === "Enter") {
-    display.textContent = `You pressed Enter: Text was ${input.value}`;
-    input.value = "";
-  }
-});
+// // Keyboard Events
+// input.addEventListener("keydown", function (event) {
+//   console.log(`Key pressed: ${event.key}`);
+//   if (event.key === "Enter") {
+//     display.textContent = `You pressed Enter: Text was ${input.value}`;
+//     input.value = "";
+//   }
+// });
 
 console.log("=== CHALLENGE ===");
 const score1 = document.getElementById('score-1');
