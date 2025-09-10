@@ -37,13 +37,51 @@ document.querySelector('.check').addEventListener('click', function () {
 
     if (guess === secretNumber) {
         console.log('Correct guess!!!');
-        document.querySelector('.message').textContent = 'Umaapoy! poy poy! Correct Number!';
         document.querySelector('.number').textContent = secretNumber;
+        if (score > highscore) {
+            highscore = score;
+            document.querySelector('.highscore').textContent = highscore;
+        }
+        document.querySelector('.guess').disabled = true;
+        document.querySelector('.check').disabled = true;
+        document.querySelector('.message').textContent = 'Umaapoy! poy poy! Correct Number!';
     } else if (guess > secretNumber) {
         console.log('Too high!');
         document.querySelector('.message').textContent = 'IHh ang taas!';
+        score--;
+        document.querySelector('.score').textContent = score;
+        if (score < 1) {
+            document.querySelector('.message').textContent = "You lost!";
+            document.querySelector('.number').textContent = secretNumber;
+            document.querySelector('.guess').disabled = true;
+            document.querySelector('.check').disabled = true;
+        }
     } else if (guess < secretNumber) {
         console.log('Too low!');
         document.querySelector('.message').textContent = 'Nye ambaba!';
+        score--;
+        document.querySelector('.score').textContent = score;
+        if (score < 1) {
+            document.querySelector('.message').textContent = "You lost!";
+            document.querySelector('.number').textContent = secretNumber;
+            document.querySelector('.guess').disabled = true;
+            document.querySelector('.check').disabled = true;
+        }
     }
+});
+
+document.querySelector('.again').addEventListener('click', function () {
+    // block
+    score = 20;
+    secretNumber = Math.trunc(Math.random() * 20) + 1;
+    document.querySelector('.message').textContent = 'Start guessing...';
+    // restart secret number display
+    document.querySelector('.number').textContent = '?';
+    // restart the score
+    document.querySelector('.score').textContent = score;
+    // empty the guess input value to none
+    document.querySelector('.guess').textContent = ' ';
+    // enable guess and check input buttons
+    document.querySelector('.guess').disabled = false;
+    document.querySelector('.check').disabled = false;
 });
